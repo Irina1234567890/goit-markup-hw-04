@@ -30,6 +30,7 @@ a {
     padding-top: 24px;
     padding-bottom: 25px;
     /*border-bottom: 1px solid #ECECEC;*/
+    border: 1px solid #ECECEC;
 }
 .containerheader {
     display: flex;
@@ -96,38 +97,6 @@ a .span {
 .link:focus {
     color: var(--accent-color);
 }
-.mail,
-.phone {
-    display: block;
-    display: flex;
-    align-items: center;
-}
-
-.icon-mail {
-    display: block;
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: var(--grey-text);
-}
-
-.icon-phone {
-    display: block;
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--grey-text);
-}
-.icon-mail:hover,
-.icon-mail:focus {
-    fill: var(--accent-color);
-}
-
-.icon-phone:hover,
-.icon-phone:focus {
-    fill: var(--accent-color);
-}
-
 .contacts a {
     font-weight: 500;
     color: var(--grey-text);
@@ -135,21 +104,24 @@ a .span {
     line-height: 1.14;
 }
 
-.contacts a:hover, 
-.contacts a:focus {
+.head-item:hover,
+.head-item:focus {
     color: var(--accent-color);
 }
 
-/*.site-nav .link.current {
-     color: var(--accent-color);
+.icon-svg {
+    margin-right: 10px;
+    fill: currentColor;
 }
-*/
+
 .section-title {
     color:var(--black-text);
 }
 
-
 /*button*/
+.name {
+    display: none;
+}
 .section-first {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -181,12 +153,13 @@ a .span {
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
+    border: none;
 }
 .knopki button:hover, 
 .knopki button:focus {
     color: var(--accent-color);
     color: #fff;
-
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button:hover {
@@ -365,6 +338,8 @@ img {
     justify-content: center;
     align-items: center;
     padding-bottom: 30px;
+    
+    
 }
 
 .social-icons li {
@@ -380,7 +355,7 @@ img {
     align-items: center;
     height: inherit;
     width: inherit;
-    fill: var( --social-color);
+    fill: var(--white-text);
 }
 .social-icons li:not(:last-child) {
     margin-right: 10px;
@@ -395,6 +370,7 @@ img {
     background-color: var(--accent-color);
     fill: var(--white-text);
     border-radius: 50%;
+    drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .social-icons a{
